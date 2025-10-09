@@ -23,9 +23,8 @@ class Room:
         return False
 
     def set_cleaning(self):
-        if self.status == "ocupada":
-            self.status = "limpieza"
-            self.hours_booked = 0
+        self.status = "limpieza"
+        self.hours_booked = 0
 
     def set_available(self):
         if self.status == "limpieza":
